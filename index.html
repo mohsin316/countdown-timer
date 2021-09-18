@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <title>countdown</title>
+</head>
+<body>
+
+    <div class="container one">
+        <h1>current time</h1>
+        <div class="current-time">
+            <div class="hour currenthour"></div>
+            <div class="minute currentminute"></div>
+            <div class="second currentsecond"></div>
+        </div>
+    </div>
+
+    <div class="container two">
+        <h1>final time</h1>
+        <form>
+            <input type="text" maxlength="2" class="text num-one" id='hour'>
+            <input type="text" maxlength="2" class="text num-two" id='minute'>
+            <input type="text" maxlength="2" class="text num-three" id='second'>
+        <button></button>
+        </form>
+        <p class="error"></p>
+    </div>
+
+    <div class="container three">
+        <h1>countdown</h1>
+        <div class="current-time countdown">
+            <div class="hour countdownhour"></div>
+            <div class="minute countdownminute"></div>
+            <div class="second countdownsecond"></div>
+        </div>
+    </div>
+
+    <footer>
+        <a class="github" href="" ><i class="fab fa-github"></i></a>
+        <a class="frontendmentor" href="https://www.frontendmentor.io/profile/mohsin316"><img src="favicon-32x32.png" alt=""></a>
+    </footer>
+
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js" integrity="sha512-F+u8eWHrfY8Xw9BLzZ8rG/0wIvs0y+JyRJrXjp3VjtFPylAEEGwKbua5Ip/oiVhaTDaDs4eU2Xtsxjs/9ag2bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
